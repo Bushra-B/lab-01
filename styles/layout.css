@@ -26,8 +26,8 @@
     background-color: rgb(87, 86, 86);
 }
 }
-/* desktop-view */
-@media  (min-width:768px) {
+/* tablet-view */
+@media  (min-width:768px) and (max-width: 1024px) {
     #a{
         width: 960px;
         height: 100px;
@@ -55,7 +55,39 @@
         width: 760px;
         height: 150px;
         background-color: rgb(87, 86, 86);
-        clear: right;
-        padding-left: 200px;
+        float: right;
     }
+}
+/* desktop-view */
+@media (min-width: 1025px) {
+    #a{
+        width: 1000em;
+        height: 150em;
+    }
+    #b{
+        width: 200em;
+        height: 600em;
+        float: left;
+    }
+    #cd-contaner{
+        width: 800em;
+        height: 250em;
+    }
+    #ef-container{
+        width: 400em;
+        height: 250em;  
+        float: left;  
+    }
+    #gh-container{
+        width: 400px;
+        height: 250px;  
+        float: right;  
+    }
+    #i{
+        width: 1000em;
+        height: 150em;
+        background-color: rgb(87, 86, 86);
+        float: right;
+    }
+}
 }

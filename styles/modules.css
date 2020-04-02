@@ -25,8 +25,8 @@
         float: right;    
     }
 }
-/* desktop-view */
-@media  (min-width:768px) {
+/* tablet-view */
+@media  (min-width:768px) and (max-width: 1024px) {
     .cd{
         width: 380px;
         height: 200px;
@@ -53,4 +53,35 @@
     #h{
         float: right;
     }
+}
+/* desktop-view */
+@media (min-width: 1025px) {
+    .cd{
+        width: 380px;
+        height: 200px;
+    }
+    #c{
+        float: left;
+    }
+    #d{
+        float: right;
+    }
+    .efgh{
+        width: 190px;
+        height: 250px;
+    }
+    #e{
+        float: left;
+    }
+    #f{
+        float: right;
+    }
+    #g{
+        float: left;
+    }
+    #h{
+        float: right;
+    }
+
+
 }
