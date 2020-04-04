@@ -1,56 +1,98 @@
 /* mobile-view */
 @media (max-width:767px){
-    .cd{
-        width: 480px;
-        height: 125px;
+    #c, #d{
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
-    #e{
-        width: 240px;
-        height: 250px;
-        float: left;
+    #c{
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
-    #f{
-        width: 240px;
-        height: 250px;
-        float: right;
+    #d{
+        grid-row-start: 4;
+        grid-row-end: 5;
     }
-    #g{
-        width: 240px;
-        height: 250px;
-        float: left;    
+    #e, #f{
+        grid-row-start: 5;
+        grid-row-end: 6;
     }
-    #h{
-        width: 240px;
-        height: 250px;
-        float: right;    
+    #e, #g{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #f, #h{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #g, #h{
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+}
+/* tablet-view */
+@media  (min-width:768px) and (max-width: 1024px) {
+    /* same layout as mobile-view, but with different colors */ 
+    #c, #d{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #c{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #d{
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #e, #f{
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    #e, #g{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #f, #h{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #g, #h{
+        grid-row-start: 6;
+        grid-row-end: 7;
     }
 }
 /* desktop-view */
-@media  (min-width:768px) {
-    .cd{
-        width: 380px;
-        height: 200px;
+@media  (min-width:1025px) {
+    #c, #d{
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
     #c{
-        float: left;
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
     #d{
-        float: right;
+        grid-column-start: 4;
+        grid-column-end: 6; 
     }
-    .efgh{
-        width: 190px;
-        height: 250px;
+    #e, #f, #g, #h{
+        grid-row-start: 3;
+        grid-row-end: 4;
     }
     #e{
-        float: left;
+        grid-column-start: 2;
+        grid-column-end: 3; 
     }
     #f{
-        float: right;
+        grid-column-start: 3;
+        grid-column-end: 4; 
     }
     #g{
-        float: left;
+        grid-column-start: 4;
+        grid-column-end: 5; 
     }
     #h{
-        float: right;
+        grid-column-start: 5;
+        grid-column-end: 6; 
     }
 }
